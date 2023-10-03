@@ -7,8 +7,8 @@ public static void main(String[] args) {
 	//creamos la variable número
 	int numero;
 	//creamos constantes
-	final int dos=2;
-	final int cero=0;
+	final int DOS=2;
+	final int CERO=0;
 	//creamos escaner
 	Scanner sc=new Scanner(System.in);
 	
@@ -17,7 +17,7 @@ public static void main(String[] args) {
 	//leemos número
 	numero=sc.nextInt();
 	//creamos la condicionalpara que la variable número tengo un resto igual a cero
-	if(numero%dos==cero) {
+	if(numero%DOS==CERO) {
 		//imprimimos pantalla
 		System.out.println("Es un número par");
 		//creamos el else con lo que muesta si no es true la condicional
