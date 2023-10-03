@@ -16,7 +16,7 @@ public static void main(String[] args) {
 	System.out.println("Introduce un número");
 	//leemos número
 	numero=sc.nextInt();
-	//creamos constante con la condición de que la variable número tengo un resto igual a cero
+	//creamos la condicionalpara que la variable número tengo un resto igual a cero
 	if(numero%dos==cero) {
 		//imprimimos pantalla
 		System.out.println("Es un número par");
