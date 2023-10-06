@@ -36,12 +36,8 @@ public class Ejercicio10 {
 				else if ((numero3+numero2)==(numero1)){
 					//mostramos por consola si se cumple la condición
 					System.out.println("La suma de " +numero3+" más " +numero2 +" es igual a " + numero1);
-					//creamos un else en el caso de que no se cumpla la condición establecida
-				}	
-				else if ((numero3+numero1)==(numero2)){
-						//mostramos por consola si se cumple la condición
-						System.out.println("La suma de " +numero3+" más " +numero1 +" es igual a " + numero2);
-						//creamos un else en el caso de que no se cumpla la condición establecida		
+					//creamos un else en el caso de que no se cumpla la condición establecida	
+					
 		}else {
 			System.out.println("La suma de "+numero1+" más "+numero2+" no es igual a "+numero3);
 			//cerramos el escaner
