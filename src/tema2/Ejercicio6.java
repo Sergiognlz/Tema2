@@ -4,8 +4,9 @@ import java.util.Scanner;
 
 public class Ejercicio6 {
 	public static void main(String[] args) {
+		
 		// creamos las variables que vamos a utilizar
-		double a, b, c, x1, x2;
+		double a, b, c, x1, x2,raiz;
 		// creamos escaner
 		Scanner sc = new Scanner(System.in);
 		// pedimos al usuario el valor de la variable a
@@ -20,12 +21,16 @@ public class Ejercicio6 {
 		System.out.println("Introduce el valor de c");
 		// leemos el numero introducido
 		c = sc.nextDouble();
+		
+		raiz=(Math.pow(b,2) - 4 * a * c) / 2 * a;
+		
 		// realizamos la operación con las variables
-		x1 = ((-b + Math.sqrt(Math.pow(b,2) - 4 * a * c)) / 2 * a);
-		x2 = ((-b - Math.sqrt(Math.pow(b,2) - 4 * a * c)) / 2 * a);
+		x1 = (-b + Math.sqrt(raiz));
+		x2 = (-b - Math.sqrt(raiz));
 		// mostramos el resultado por consola
 		
-		if ((x1>0)&&(x2>0)){
+		
+		if ((raiz>0)){
 		
 		System.out.println("Según la ecuación ax^+bx+c=0 el valor de x será: " + x1 + " y " + x2);
 		// cerramos escanner
@@ -36,5 +41,6 @@ public class Ejercicio6 {
 		
 		sc.close();
 
+		
 	}
 }
