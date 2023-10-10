@@ -25,7 +25,7 @@ public static void main(String[] args) {
 	case "A"->{
 		System.out.println("Motocicletas");}
 	case "B1","B2"->{
-		System.out.println("Automóbiles");}
+		System.out.println("Automóviles");}
 	default->{
 	System.out.println("Categoría no contemplada.");
 	//cerramos escaner
