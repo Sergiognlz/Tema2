@@ -41,10 +41,12 @@ public static void main(String[] args) {
 	case C->{
 		System.out.println(numero1*numero2);}
 	case D->{
-		System.out.println(numero1/numero2);
+		System.out.println(numero1/numero2);}
+		default->
+		System.out.println("La opción introducida no es válida.");}
 	//cerramos escaner
 	sc.close();
 		
-	}
+	
 }
-}}
+}
