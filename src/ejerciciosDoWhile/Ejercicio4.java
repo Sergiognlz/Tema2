@@ -1,4 +1,4 @@
-package doWhile;
+package ejerciciosDoWhile;
 
 import java.util.Scanner;
 
