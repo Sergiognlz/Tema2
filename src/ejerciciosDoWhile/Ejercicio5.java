@@ -9,25 +9,30 @@ public static void main(String[] args) {
 	Random rand=new Random();
 	//creamos comando escaner
 	Scanner sc=new Scanner(System.in);
+	int min=1, max=101,numero;
 	//definimos una variable número con un valor random entre 1 y 101(porque el comando genera un valor que no toma el último).
-	int numero=rand.nextInt(1,101);
+	
 	//creamos variables con cadena
 	String mayor="Mayor", menor="Menor", si="Si", respuesta;
 //Ponemos las instrucciones del juego
 	System.out.println("Vamos a jugar a un juego. Piensa un número. Voy a adivinarlo");
 	//creamos el bucle
 	do {
+		numero=rand.nextInt(min,max);
 		System.out.println("¿Es el "+numero+"?");
 		respuesta=sc.nextLine();
 		if(respuesta.equalsIgnoreCase(mayor)) {
-			numero=rand.nextInt((numero+1),101);
-		System.out.println("¿Es el "+numero+"?");
-		respuesta=sc.nextLine();}
+			
+			min=numero+1;
+		}
 		else if(respuesta.equalsIgnoreCase(menor)) {
-			numero=rand.nextInt(1,(numero-1));
-		System.out.println("¿Es el "+numero+"?");
-		respuesta=sc.nextLine();}
-	
+			
+			max=numero;
+			
+		}
+		else  {
+			System.out.println("El valor introducido no es válido");
+		}
 	}while(!respuesta.equalsIgnoreCase(si));
 	System.out.println("¡He acertado parguela!");
 	sc.close();
