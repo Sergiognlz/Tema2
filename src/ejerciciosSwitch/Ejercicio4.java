@@ -20,22 +20,22 @@ public class Ejercicio4 {
 		dado2 = sc.next();
 		//creamos switch para convertir el dado 1 en un valor entero.
 	valor1=switch(dado1) {
-	case "Uno"-> 1;
-	case "Dos"->2;
-	case "Tres"->3;
-	case "Cuatro"->4;
-	case "Cinco"->5;
-	case "Seis"->6;
+	case "uno"-> 1;
+	case "dos"->2;
+	case "tres"->3;
+	case "cuatro"->4;
+	case "cinco"->5;
+	case "seis"->6;
 	default->0;};
 	
 	//creamos otro switch para convertir el dado en dado 2 en un valor entero
 	valor2=switch(dado2) {
-	case "Uno"-> 1;
-	case "Dos"->2;
-	case "Tres"->3;
-	case "Cuatro"->4;
-	case "Cinco"->5;
-	case "Seis"->6;
+	case "uno"-> 1;
+	case "dos"->2;
+	case "tres"->3;
+	case "cuatro"->4;
+	case "cinco"->5;
+	case "seis"->6;
 	default->0;};
 	//mostramos pantalla con la suma de ambos números		
 	System.out.println("La suma de tus tiradas es "+(valor1+valor2));
