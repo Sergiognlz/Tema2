@@ -33,7 +33,7 @@ public static void main(String[] args) {
 		else  {
 			System.out.println("El valor introducido no es válido");
 		}
-	}while(!respuesta.equalsIgnoreCase(si));
+	}while(!respuesta.equalsIgnoreCase(si)&& min!=max);
 	System.out.println("¡He acertado parguela!");
 	sc.close();
 	}
