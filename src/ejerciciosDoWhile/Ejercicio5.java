@@ -15,7 +15,7 @@ public static void main(String[] args) {
 	//creamos variables con cadena
 	String mayor="Mayor", menor="Menor", si="Si", respuesta;
 //Ponemos las instrucciones del juego
-	System.out.println("Vamos a jugar a un juego. Piensa un número. Voy a adivinarlo");
+	System.out.println("Vamos a jugar a un juego. Piensa un número del 1 al 100. Voy a adivinarlo, así que indícame si es mayor o menor si no lo acierto.");
 	//creamos el bucle
 	do {
 		numero=rand.nextInt(min,max);
@@ -30,11 +30,9 @@ public static void main(String[] args) {
 			max=numero;
 			
 		}
-		else  {
-			System.out.println("El valor introducido no es válido");
-		}
+	
 	}while(!respuesta.equalsIgnoreCase(si)&& min!=max);
-	System.out.println("¡He acertado parguela!");
+	System.out.println("¡He acertado!");
 	sc.close();
 	}
 }
