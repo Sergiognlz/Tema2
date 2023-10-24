@@ -8,8 +8,11 @@ public static void main(String[] args) {
 	//Creamos el escaner
 	Scanner sc=new Scanner(System.in);
 	//creamos bucle controlado con FOR
-	for(int contador=2;contador<=200;contador+=2) {
-		System.out.println(contador);
+	for(int contador=1;contador<=200;contador++) {
+		
+		if(contador%2==0) {
+			System.out.println(contador);
+		}
 	}
 	//cerramos escaner
 	sc.close();
