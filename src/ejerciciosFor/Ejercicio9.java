@@ -14,13 +14,21 @@ public static void main(String[] args) {
 	System.out.println("Introduce un número");
 	//guardamos el número introducido
 	numero=sc.nextInt();
+	if(numero!=1) {
+	for(int i=2; i<=numero/2;i++)	{
+	if (numero%i==0) {
+		primo=true;
 	
-	
-if(numero%2==0) {
+	}
+		}
+	}else {
+		primo=false;
+	}
+		if(true) {
 	System.out.println("No es primo");}
 	
-	else {
+else {
 		System.out.println("Es primo");
+
 }
-}
-}
+}}
