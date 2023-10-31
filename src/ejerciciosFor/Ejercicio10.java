@@ -13,22 +13,22 @@ public static void main(String[] args) {
 	
 	//pedimos al usuario dos números y explicamos las condiciones
 	System.out.println("Introduce dos números. El primero debe ser menor que el segundo");
-	
-	
-//creamos un condicional con if en caso que los números introducidos no cumplan la norma. 
-	do {
-		System.out.println("Introduce el primer número");
+	System.out.println("Introduce el primer número");
+	//guardamos el primer número
 		A=sc.nextInt();
+		
+//creamos un bucle con do 
+	do{
+		System.out.println("Introduce el segundo número");
+		//guardamos el segundo número
+		B=sc.nextInt();
+		//si el primer número es mayor que el segundo se muestra el siguiente mensaje y se sigue en el bucle.
 		if (A>B) {
+			
 		System.out.println("El número introducido no es válido.");
 		}
-	}while(B>A);
-	
-	do {
-		System.out.println("Introduce el segundo número");
-		B=sc.nextInt();
-		System.out.println("El número introducido no es válido.");
-	}while(B>A);
+	//cuando el segundo número introducido sea mayor que el primero (es decir, cuando la condición de que A>B sea falsa, pasará el bucle.
+	}while(A>B);
 
 	for(;A<=B;A++) {
 	System.out.println( A );
@@ -39,5 +39,5 @@ public static void main(String[] args) {
 			
 	}
 
-
 }
+

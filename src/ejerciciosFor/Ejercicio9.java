@@ -14,7 +14,8 @@ public class Ejercicio9 {
 		System.out.println("Introduce un número entero positivo");
 		// guardamos el número introducido
 		numero = sc.nextInt();
-		if (numero > 1) {
+		if (numero < 1) {
+			
 			for (int i = 2; i < numero; i++) {
 				if (numero % i == 0) {
 					primo = false;
