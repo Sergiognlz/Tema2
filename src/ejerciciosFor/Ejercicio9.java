@@ -11,19 +11,23 @@ public class Ejercicio9 {
 		// creamos escaner
 		Scanner sc = new Scanner(System.in);
 		// pedimos un número al usuario
-		System.out.println("Introduce un número");
+		System.out.println("Introduce un número entero positivo");
 		// guardamos el número introducido
 		numero = sc.nextInt();
 		if (numero > 1) {
-			for (int i = 2; i < numero ; i++) {
+			for (int i = 2; i < numero; i++) {
 				if (numero % i == 0) {
 					primo = false;
 					break;
 				}
 			}
-		}else if(numero==1) {
-			primo=false;
-		}
+		} else if (numero == 1) {
+			primo = false;
+		} else {
+			System.out.println("El número introducido no es correcto.");
+			
+			}
+		
 		if (primo == false) {
 			System.out.println("No es primo");
 		}

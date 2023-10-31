@@ -13,4 +13,5 @@ public class Ejercicio1 {
 			contador++;
 		} while (contador <= 20);
 	}
+	
 }
