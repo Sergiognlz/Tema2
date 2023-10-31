@@ -15,28 +15,30 @@ public class Ejercicio9 {
 		// guardamos el número introducido
 		numero = sc.nextInt();
 		if (numero < 1) {
-			
-			for (int i = 2; i < numero; i++) {
-				if (numero % i == 0) {
-					primo = false;
-					break;
-				}
-			}
-		} else if (numero == 1) {
-			primo = false;
-		} else {
 			System.out.println("El número introducido no es correcto.");
-			
+
+		} else {
+			if (numero > 1) {
+
+				for (int i = 2; i < numero; i++) {
+					if (numero % i == 0) {
+						primo = false;
+						break;
+					}
+				}
+			} else if (numero == 1) {
+				primo = false;
 			}
-		
-		if (primo == false) {
-			System.out.println("No es primo");
+			if (primo == false) {
+				System.out.println("No es primo");
+			}
+
+			else {
+				System.out.println("Es primo");
+
+			}
 		}
 
-		else {
-			System.out.println("Es primo");
-
-		}
 		sc.close();
 
 	}
