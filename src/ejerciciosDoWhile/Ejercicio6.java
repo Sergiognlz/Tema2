@@ -38,7 +38,7 @@ public class Ejercicio6 {
 		
 		System.out.println("Jugador 1 jugó "+jugada1+", Jugador 2 jugó "+jugada2);
 		// A contrinuación creamos las condiciones para cada combinación de jugadas 
-		if (jugada1.equals(PIEDRA)&& jugada2.equals(PAPEL)){
+		if (jugada1.equalsIgnoreCase(PIEDRA)&& jugada1.equalsIgnoreCase(PAPEL)&&jugada1.equalsIgnoreCase(TIJERA)&&jugada2.equalsIgnoreCase(PIEDRA)&&jugada2.equalsIgnoreCase(PAPEL)&&jugada2.equalsIgnoreCase(TIJERA)){
 			//Mostramos el resultado de la jugada
 			System.out.println("¡El jugador 2 gana!");
 		}else if(jugada1.equalsIgnoreCase(PIEDRA)&&jugada2.equalsIgnoreCase(TIJERA)) {
