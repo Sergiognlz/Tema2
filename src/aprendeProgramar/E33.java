@@ -29,8 +29,10 @@ public static void main(String[] args) {
 		}
 	}while((x<(-50)||x>50)||(y<1||y>20));
 	//creemos bucle que cuente del 1 al número introducido
-	for(int i=1;i<=x;i++) {
+	for(int i=1;i<=y;i++) {
+		System.out.println(x+" x "+i+" = "+x*i);
 		
 	}
+	sc.close();
 }
 }
