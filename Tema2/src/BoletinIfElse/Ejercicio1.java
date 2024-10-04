@@ -1,4 +1,4 @@
-package condicionales;
+package BoletinIfElse;
 
 public class Ejercicio1 {
 
