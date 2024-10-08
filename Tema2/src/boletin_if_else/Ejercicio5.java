@@ -1,4 +1,4 @@
-package BoletinIfElse;
+package boletin_if_else;
 
 import java.util.Scanner;
 
