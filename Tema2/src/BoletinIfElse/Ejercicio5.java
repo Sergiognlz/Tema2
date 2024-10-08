@@ -24,7 +24,6 @@ public class Ejercicio5 {
 		if (num1 > num2 && num2 > num3) {
 			// imprimimos por pantalla orden
 			System.out.println(num1 + ">" + num2 + ">" + num3);
-
 		} else if (num1 < num3 && num3 > num2) {
 			// imprimimos por pantalla orden
 			System.out.println(num1 + ">" + num3 + ">" + num2);
