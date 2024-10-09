@@ -16,7 +16,7 @@ public class Ejercicio1 {
 		Scanner sc = new Scanner(System.in);
 
 		// pedimos al usuario la nota
-		System.out.println("Introduce la nota");
+		System.out.println("Introduce una nota comprendida entre 0 y 10");
 		// guardamos el valor
 		nota = sc.nextInt();
 		// creamos un swtich mostrar un mensaje con cada valor
@@ -26,6 +26,7 @@ public class Ejercicio1 {
 		case 6->System.out.println("Bien");
 		case 7,8->System.out.println("Notable");
 		case 9,10->System.out.println("Sobresaliente");
+		default->System.out.println("Nota introducida errónea");
 		}
 		sc.close();
 	}
