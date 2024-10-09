@@ -32,6 +32,7 @@ public class Ejercicio4 {
 		case 4 -> System.out.println("CUATRO");
 		case 5 -> System.out.println("CINCO");
 		case 6 -> System.out.println("SEIS");
+		default->System.out.println("Valor erróneo");
 		}
 		// pedimos al usuario su tirada de dados
 		System.out.println("Introduce tu tirada de dados");
@@ -46,6 +47,7 @@ public class Ejercicio4 {
 		case 4 -> System.out.println("CUATRO");
 		case 5 -> System.out.println("CINCO");
 		case 6 -> System.out.println("SEIS");
+		default->System.out.println("Valor erróneo");
 		}
 		//mostramos suma en formato numérico
 		System.out.println("La suma de sus tiradas es: "+(tir1+tir2));
