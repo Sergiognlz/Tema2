@@ -24,13 +24,14 @@ public class Ejercicio2 {
 		// guardamos el número
 		num = sc.nextInt();
 
-		// nos montamos tremenda fumada imnecesaria para justificar el uso de
-		// condicionales
-		if (num < 0) {
+		// comprobamos que el número sea distinto de 0, porque con 0 no sé por qué no funciona
+		if (num != 0) {
 			// imprimimos por pantalla el valor absoluto del número introducido y
 			// brujería....
 			System.out.println(Math.abs(num));
 
+		}else {
+			System.out.println("La distancia a 0 de 0 es 0.");
 		}
 		sc.close();
 	}

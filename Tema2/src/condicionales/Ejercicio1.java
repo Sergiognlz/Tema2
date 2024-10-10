@@ -11,9 +11,14 @@ public class Ejercicio1 {
 	 */
 
 	/*
-	 * Putas pruebas Entrada Esperado Resultado 10000 fuera rango fuera rango 1
-	 * capicúa capicúa 21 no capicúa no capicúa 212 capicúa capicúa 3212 no capicúa
-	 * no capicúa 2882 capicúa capicúa
+	 * Putas pruebas 
+	 * Entrada 			Esperado 		Resultado 
+	 * 10000 			fuera rango 	fuera rango 
+	 * 1				capicúa 		capicúa 
+	 * 21 				no capicúa 		no capicúa 
+	 * 212 				capicúa 		capicúa 
+	 * 3212 			no capicúa		no capicúa 
+	 * 2882 			capicúa			 capicúa
 	 */
 
 	public static void main(String[] args) {
