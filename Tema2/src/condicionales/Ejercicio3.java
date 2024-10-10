@@ -12,6 +12,7 @@ public class Ejercicio3 {
 	/*
 	 * Putas pruebas 
 	 * Entrada 				Esperado 				Resultado
+	 * 3					no válido				no válido
 	 * 30250815				30250815L				30250815L
 	 * 
 	 * 
