@@ -26,15 +26,9 @@ public class Ejercicio2 {
 		// guardamos el número
 		num = sc.nextInt();
 
-		// comprobamos que el número sea distinto de 0, porque con 0 no sé por qué no funciona
-		if (num != 0) {
-			// imprimimos por pantalla el valor absoluto del número introducido y
-			// brujería....
-			System.out.println(Math.abs(num));
-
-		}else {
-			System.out.println("La distancia a 0 de 0 es 0.");
-		}
+		// comprobamos que el número sea distinto de 0 y si es negativo le hacemos el absoluto, de no ser así cogemos el número tal cual
+		System.out.println(num=num<0?Math.abs(num):num);
+		
 		sc.close();
 	}
 
