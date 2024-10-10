@@ -10,15 +10,11 @@ public class Ejercicio1 {
 	 * izquierda.
 	 */
 
-	/* Putas pruebas 
-	 * Entrada		Esperado		Resultado
-	 * 10000		fuera rango		fuera rango
-	 * 1			capicúa			capicúa
-	 * 21			no capicúa		no capicúa
-	 * 212			capicúa			capicúa
-	 * 3212		no capicúa		no capicúa
-	 * 2882			capicúa			capicúa
-	 * */
+	/*
+	 * Putas pruebas Entrada Esperado Resultado 10000 fuera rango fuera rango 1
+	 * capicúa capicúa 21 no capicúa no capicúa 212 capicúa capicúa 3212 no capicúa
+	 * no capicúa 2882 capicúa capicúa
+	 */
 
 	public static void main(String[] args) {
 
@@ -77,25 +73,28 @@ public class Ejercicio1 {
 					// mesanje no es capicúa
 					System.out.println("No es capicúa");
 				}
-				//comprobamos que el número tiene 4 cifras
-			}else if(num>=1000&&num<=9999){
-				//obtenemos las unidades
-				unidades=num%10;
-				//obtenemos las decenas haciendo un módulo de 100 y dividiendo el resultado por 10 para quedarnos con la primera cifra
-				decenas=num%100/10;
-				//obtenemos las centenas dividiendo por 100 y luego haciendo el módulo de 10 para quedarnos con la última cifra
-				centenas=(num/100)%10; 
-				//obtenemos los millares dividiendo por 1000
-				millares=num/1000;
-				//mediante un if interior comprobamos que unidades y millares sean iguales y que decenas y centenas también.
-				if(unidades==millares&&decenas==centenas) {
-					//si cumple la condición el número será capicúa
+				// comprobamos que el número tiene 4 cifras
+			} else if (num >= 1000 && num <= 9999) {
+				// obtenemos las unidades
+				unidades = num % 10;
+				// obtenemos las decenas haciendo un módulo de 100 y dividiendo el resultado por
+				// 10 para quedarnos con la primera cifra
+				decenas = num % 100 / 10;
+				// obtenemos las centenas dividiendo por 100 y luego haciendo el módulo de 10
+				// para quedarnos con la última cifra
+				centenas = (num / 100) % 10;
+				// obtenemos los millares dividiendo por 1000
+				millares = num / 1000;
+				// mediante un if interior comprobamos que unidades y millares sean iguales y
+				// que decenas y centenas también.
+				if (unidades == millares && decenas == centenas) {
+					// si cumple la condición el número será capicúa
 					System.out.println("El número es capicúa");
-				}else {
-					//sino cumple no lo será
+				} else {
+					// sino cumple no lo será
 					System.out.println("El número no es capicúa");
-			}
- 
+				}
+
 			} else {
 				// mensaje de error
 				System.out.println("El número introducido está fuera del rango permitido");
