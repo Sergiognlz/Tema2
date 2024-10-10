@@ -10,8 +10,10 @@ public class Ejercicio2 {
 
 	/*
 	 * Putas pruebas
-	 * Entrada 		Esperado 		Re
-	 * 
+	 * Entrada 		Esperado 		Resultado
+	 * 0				0				0
+	 * -15				15				15
+	 * 30				30				30
 	 */
 	public static void main(String[] args) {
 		// creamos una variable donde guardar el número que usaremos
