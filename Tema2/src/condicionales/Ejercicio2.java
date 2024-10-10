@@ -10,7 +10,7 @@ public class Ejercicio2 {
 
 	/*
 	 * Putas pruebas
-	 * 
+	 * Entrada 		Esperado 		Re
 	 * 
 	 */
 	public static void main(String[] args) {
