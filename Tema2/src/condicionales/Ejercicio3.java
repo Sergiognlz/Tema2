@@ -116,7 +116,8 @@ public class Ejercicio3 {
 		} else{
 			// en caso de no tener 8 dígitos exactos saltará mensaje de error
 			System.out.println("El número introducido no es válido");
-
+			//cerramos escaner
+			sc.close();
 
 }
 }
