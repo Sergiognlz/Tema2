@@ -35,7 +35,11 @@ public class Ejercicio3 {
 					num=sc.nextInt();
 				}
 				//mostramos mensaje de fin de programa y suma
+				if(cont==0) {
+					System.out.println("No has introducido ningún número positivo");
+				}else {
 				System.out.println("Fin de programa. Media= "+(double)suma/cont);
+				}
 				//cerramos escaner
 				sc.close();
 		
