@@ -41,7 +41,7 @@ public class Ejercicio4 {
 			if (num < 0) {
 				contRes++;
 				// resta
-				resta -= num;
+				resta += num;
 				// declaramos media
 				media = (double) resta / contRes;
 				// if para contar ceros
