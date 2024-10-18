@@ -32,6 +32,7 @@ public class Ejercicio4 {
 		do {
 			//imprimimos tabla de multiplicar
 			System.out.println(num+" x "+cont+" = "+num*cont);
+			//incrementamos contador
 			cont++;
 		}while(cont<=10);
 		//cerramos escaner
