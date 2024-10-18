@@ -9,8 +9,9 @@ public class Ejercicio2 {
 		//creamos un contador
 		int cont=1;
 		
-		//creamos do while para controlar las 20 iteraciones
+		//creamos do while para controlar las 200 iteraciones
 		do {
+			//mostramos solo los pares
 			if(cont%2==0) {
 		System.out.println(cont);
 			}
