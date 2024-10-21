@@ -14,43 +14,45 @@ public class Ejercicio4 {
 	 */
 	public static void main(String[] args) {
 		// creamos variables para las dos tiradas de dados
-		int tir1;
-		int tir2;
+		String tir1="";
+		String tir2="";
+		int num1;
+		int num2;
 		// creamos escaner
 		Scanner sc = new Scanner(System.in);
 
 		// pedimos al usuario su tirada de dados
 		System.out.println("Introduce tu tirada de dados");
 		// guardamos el valor
-		tir1 = sc.nextInt();
+		tir1 = sc.next();
 
 		// case con su tirada en cadena
-		switch (tir1) {
-		case 1 -> System.out.println("UNO");
-		case 2 -> System.out.println("DOS");
-		case 3 -> System.out.println("TRES");
-		case 4 -> System.out.println("CUATRO");
-		case 5 -> System.out.println("CINCO");
-		case 6 -> System.out.println("SEIS");
-		default->System.out.println("Valor erróneo");
-		}
+		num1=switch (tir1) {
+		case "UNO" ->{ yield 1;}
+		case "DOS" ->{ yield 2;}
+		case "TRES" ->{ yield 3;}
+		case "CUATRO" ->{ yield 4;}
+		case "CINCO" ->{ yield 5;}
+		case "SEIS" ->{ yield 6;}
+		default-> { yield 0;}
+		};
 		// pedimos al usuario su tirada de dados
 		System.out.println("Introduce tu tirada de dados");
 		// guardamos el valor
-		tir2 = sc.nextInt();
+		tir2 = sc.next();
 
 		// case con su tirada en cadena
-		switch (tir2) {
-		case 1 -> System.out.println("UNO");
-		case 2 -> System.out.println("DOS");
-		case 3 -> System.out.println("TRES");
-		case 4 -> System.out.println("CUATRO");
-		case 5 -> System.out.println("CINCO");
-		case 6 -> System.out.println("SEIS");
-		default->System.out.println("Valor erróneo");
-		}
+		num2=switch (tir2) {
+		case "UNO" ->{ yield 1;}
+		case "DOS" ->{ yield 2;}
+		case "TRES" ->{ yield 3;}
+		case "CUATRO" ->{ yield 4;}
+		case "CINCO" ->{ yield 5;}
+		case "SEIS" ->{ yield 6;}
+		default-> { yield 0;}
+		};
 		//mostramos suma en formato numérico
-		System.out.println("La suma de sus tiradas es: "+(tir1+tir2));
+		System.out.println("La suma de sus tiradas es: "+(num1+num2));
 		//cerramos escaner
 		sc.close();
 	}
