@@ -21,8 +21,6 @@ public class Ejercicio7 {
 		int resta;
 		int multi;
 		double divi;
-		//booleano para controlar el menú
-		boolean salir=true;
 		// creamos escaner
 		Scanner sc = new Scanner(System.in);
 		//do while para que repita el proceso hasta salir del programa
@@ -65,14 +63,14 @@ public class Ejercicio7 {
 			System.out.println(divi);
 		}
 		case 'E' -> {
-			salir=false;
+			
 		}
 		default -> {
 			System.out.println("La opción elegida no existe");
 		}
 		};
 		
-		}while(salir);
+		}while(menu!='E');
 		//mensaje fin de programa
 		System.out.println("Fin de programa");
 		sc.close();
