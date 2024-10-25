@@ -11,22 +11,25 @@ public class Ejercicio5 {
 		//creamos variable donde almacenar el número
 		int num;
 		//creamos variable para el resultado
-		int fact=1;
+		long fact=1;
 		//escaner
 		Scanner sc=new Scanner(System.in);
 		
 		//pedimos un número
-		System.out.println("Inntroduce un número para calcular su factorial");
+		System.out.println("Introduce un número para calcular su factorial");
 		//guardamos el número
 		num=sc.nextInt();
 		
 		//for para recorrer inversamente el número
-		for(int i=num;i>0;i--) {
+		for(int i=num;i>=2;i--) {
 			//factorial es igual a factorial multiplicado por la i;
+			
+			System.out.print(i+" x ");
 			fact*=i;
+		
 		}
 		//mostramos resultado por pantalla
-		System.out.println("Factorial:" +fact);
+		System.out.println("1 = " +fact);
 		//cerramos escaner
 		sc.close();
 	}
