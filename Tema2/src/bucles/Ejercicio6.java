@@ -28,16 +28,18 @@ public class Ejercicio6 {
 			//imprimimos espacio en blanco
 		
 			//otro for dentro que no sé muy bien que hace pero es necesario
-			for(int j=1;j<=(num-i);j++) {
+			for(int j=i;j<num;j++) {
 				
-			
 			//imprimimos por pantalla
 			System.out.print(" ");
-			
-			}
-			//imprimimos espacio en blanco
-			System.out.println("*");
 		
+			}
+		for(int k=1;k<=i;k++) {
+			System.out.print("* ");
+		
+		}
+		
+		System.out.println("");
 			
 		}
 		//cerramos escaner
