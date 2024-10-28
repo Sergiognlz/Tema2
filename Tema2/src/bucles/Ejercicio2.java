@@ -10,8 +10,9 @@ public class Ejercicio2 {
 	public static void main(String[] args) {
 		// variable número
 		int num;
-		// contador
+		// contador primos
 		int primos = 0;
+		//booleano de control de primos
 		boolean primo = true;
 		// escaner
 		Scanner sc = new Scanner(System.in);
@@ -23,17 +24,25 @@ public class Ejercicio2 {
 			// guardamos el valor
 			num = sc.nextInt();
 		} while (num <= 2);
+		//usamos el primer for para contar del 2 al número insertado
 		for (int i = 2; i <= num; i++) {
+			//el segundo contará desde 2 hasta la iteracción del for anterior
 			for (int j = 2; j < i; j++) {
-				// if cuando el número sea divisible por el número
+				// if para que cuando el módulo del número a comprobar sea divisible 
 				if (i % j == 0) {
+					//si tiene divisor no será primo
 					primo = false;
+					//por lo tanto salimos del bucle
 					break;
+					//else cuando comprobemos que no es divisible por ningún número
 				} else {
+					//con lo que será primo
 					primo = true;
 				}
 			}
+			//si es primo
 			if (primo) {
+				//incrementamos
 				primos++;
 			}
 		}

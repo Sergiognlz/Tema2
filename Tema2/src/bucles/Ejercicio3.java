@@ -38,7 +38,7 @@ public class Ejercicio3 {
 			// guardamos
 			b = sc.nextInt();
 		} while (b < 0);
-
+// usamos un if else para definir cual es el mayor y el menor
 		if (a >= b) {
 			mayor = a;
 			menor = b;
@@ -47,14 +47,18 @@ public class Ejercicio3 {
 			menor = a;
 
 		}
-
+		//for para recorrer desde el número menor hasta 0, usamos el menor porque el menor nunca podrá ser divisible entre el mayor
 		for (int i = menor; i > 0; i--) {
+			//un if para cuando encontremos un número que sea disivible tanto por el mayor como por el menor
 			if ((mayor % i == 0) && (menor % i == 0)) {
+				//cuando lo encontremos asignamos su valor a la variable divi
 				divi = i;
+				//break para salir del bucle
 				break;
 			}
 
 		}
+		//imprimimos por pantalla
 		System.out.println("El máximo común divisor es " + divi);
 
 		// cerramos escaner
