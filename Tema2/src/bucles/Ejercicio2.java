@@ -11,8 +11,8 @@ public class Ejercicio2 {
 		// variable número
 		int num;
 		// contador
-		int primos =1;
-		boolean primo=false;
+		int primos =0;
+		boolean primo=true;
 		// escaner
 		Scanner sc = new Scanner(System.in);
 
@@ -23,23 +23,18 @@ public class Ejercicio2 {
 			// guardamos el valor
 			num = sc.nextInt();
 		} while (num <= 2);
-		for (int i = 3; i <= num; i++) {
-			
-			
-			
-			
-			for (int j = 1; j < i; ) {
-				j++;
+		for (int i = 2; i <= num; i++) {
+				
+			for (int j = 2; j < i; j++) {
+				
 				// if cuando el número sea divisible por el número
 				if (i % j == 0) {
 					primo=false;
-				
+				break;
 				}else {
 				primo=true;	
 				}
 					
-			
-				
 			}
 			if(primo) {
 				primos++;
