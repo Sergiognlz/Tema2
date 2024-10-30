@@ -1,5 +1,6 @@
 package bucles;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Ejercicio1 {
@@ -20,22 +21,35 @@ public class Ejercicio1 {
 
 	public static void main(String[] args) {
 		// variable horas, minutos y segundos
-		int horas;
-		int min;
-		int seg;
-		int inc;
+		int horas=0;
+		int min=0;
+		int seg=0;
+		int inc=0;
+		boolean error=false;
 		// escaner
 		Scanner sc = new Scanner(System.in);
 
 		// do while para controlar que los valores introducidos estén dentro del rango
 		// deseado
 		do {
+			try {
 			// pedimos las horas al usuario
 			System.out.println("Introduce las horas");
 			// guardamos las horas
 			horas = sc.nextInt();
+			assert(horas > 0 && horas < 23):"La hora introducida está fuera de rango";
+			error=false;
+			}catch(AssertionError e) {
+				System.out.println(e.getMessage());
+			error=true;
+			}catch(InputMismatchException e){
+				System.out.println("El valor introducido no es válido");
+				error=true;
+			}finally {
+			sc.nextLine();
+			}
 			// condición de salida
-		} while (horas < 0 || horas > 23);
+		} while (error);
 
 		// otro do while para los minutos
 		do {
