@@ -1,5 +1,6 @@
 package bucles;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Ejercicio10 {
@@ -9,21 +10,34 @@ public class Ejercicio10 {
 	 */
 	public static void main(String[] args) {
 		// variable para guardar el número introducido
-		int num;
+		int num=0;
 		int cifraFinal;
 		int cifraPrim;
 		int copiaNum;
 		int cifras=0;
 		int inverso=0;
+		boolean error=false;
 		// escaner
 		Scanner sc = new Scanner(System.in);
 
 		do {
+			try {
 			// pedimos número
 			System.out.println("Introduce un número mayor que 0");
 			// guardamos
-			num = sc.nextInt();
-		} while (num < 0);
+		num = sc.nextInt();
+		assert(num>=0):"El número introducido es negativo. Introduce un número mayor que 0";
+		error=false;
+			}catch(AssertionError e) {
+				System.err.println(e.getMessage());
+				error=true;
+			}catch(InputMismatchException e) {
+				System.err.println("El valor introducido no es válido");
+				error=true;
+			}finally {
+				sc.nextLine();
+			}
+		} while (error);
 
 		copiaNum = num;
 		while (copiaNum != 0) {
