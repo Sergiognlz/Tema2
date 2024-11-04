@@ -11,7 +11,7 @@ public class Ejercicio1 {
 	 */
 	public static void main(String[] args) {
 		//creamos variable número
-		int num;
+		int num=0;
 		//variable booleano de control del catch
 		boolean error=false;
 		//escaner
@@ -32,5 +32,21 @@ public class Ejercicio1 {
 				error=true;
 			}
 		}while(error);
+		
+		//for para las filas
+		for(int i=1;i<=num;i++) {
+			
+		//for para las columnas
+			for(int j=1;j<num;j++) {
+				if((j==1||i==1)||(j==num||i==num)) {
+				System.out.print("* ");
+				}else {
+					System.out.print("  ");
+				}
+			}
+			System.out.println("* ");
+		}
+		
+		sc.close();
 	}
 }
