@@ -30,6 +30,8 @@ public class Ejercicio1 {
 			}catch(InputMismatchException e) {
 				System.out.println("El valor introducido no es válido");
 				error=true;
+			}finally {
+				sc.nextLine();
 			}
 		}while(error);
 		
