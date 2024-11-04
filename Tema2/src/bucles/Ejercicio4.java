@@ -16,9 +16,9 @@ public class Ejercicio4 {
 		int b;
 		// variable donde guardar el mayor y menor
 		int mayor = 0;
-		int menor = 0;
 		// varable donde guardar el divisor
 		int multi = 1;
+		boolean enc = false;
 
 		// escaner
 		Scanner sc = new Scanner(System.in);
@@ -36,29 +36,18 @@ public class Ejercicio4 {
 			// guardamos
 			b = sc.nextInt();
 		} while (b < 0);
-		// iuf else para ver cual es mayor y asignarlo
-		if (a >= b) {
-			mayor = a;
-			menor = b;
-		} else if (a < b) {
-			mayor = b;
-			menor = a;
 
-		}
-		//for para recorrer desde el mayor en adelante. creamos un bucle infinito para que no pare hasta encontrar el mcm
-		for (int i = mayor; i > 0; i++) {
-			// if con módulo de i entre el mayor y menor para calcular los múltiplos
-			if ((i % mayor == 0) && (i % menor == 0)) {
-				// asignamos el valor a multi
-				multi = i;
-				// salimos del bucle
-				break;
+		mayor = Math.max(a, b);
+
+		while (!enc) {
+			if (mayor % a == 0 && mayor % b == 0) {
+				multi = mayor;
+				// mostramos por pantalla
+				System.out.println("El máximo común múltiplo es " + multi);
+				enc = true;
 			}
-
+			mayor++;
 		}
-		// mostramos por pantalla
-		System.out.println("El máximo común múltiplo es " + multi);
-
 		// cerramos escaner
 		sc.close();
 	}
